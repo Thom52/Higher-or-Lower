@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
 
+    <!-- Linked stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Higher or Lower</title>
 </head>
@@ -22,34 +23,46 @@
 <body>
     <h1 class="heading">Higher or Lower</h1>
 
-    <div class="game-area">
+    <!-- Main Content -->
+    <main>
 
-        <div class="rules-box">
-            <p>The rules are simple. Roll the 10 sided die, then pick Higher, or lower.</p>
-            <p>Dare you test your luck?</p>
+        <!-- Div which contains all game elements -->
+        <div class="game-area">
+
+            <!-- Rules -->
+            <div class="rules-box">
+                <p>The rules are simple. Roll the 10 sided die, then pick Higher, or lower.</p>
+                <p>Dare you test your luck?</p>
+            </div>
+
+            <!-- Dice area -->
+            <div class="dice-area">
+                <img src="assets/images/d6 face.png" alt="d6 dice face">
+            </div>
+
+            <!-- Button that begins the game -->
+            <div class="roll-dice">
+                <button class="btn btn--roll">Roll Dice!</button>
+            </div>
+
+            <!-- Div which contains main gameplay function -->
+            <div class="choice-area">
+                <button class="btn btn--choice">Higher</button>
+                <button class="btn btn--choice">Lower</button>
+            </div>
+
+            <!-- Results section -->
+            <div id="result"></div>
+
+            <!-- Score section -->
+            <div class="score-area">
+                <p class="score">Correct Guesses: <span id="correct">0</span></p>
+                <p class="score">Incorrect Guesses: <span id="incorrect">0</span></p>
+            </div>
+
         </div>
 
-        <div class="dice-area">
-            <img src="assets/images/d10.png" alt="d10 dice face">
-        </div>
-
-        <div class="roll-dice">
-            <button class="btn btn--roll">Roll Dice!</button>
-        </div>
-
-        <div class="choice-area">
-            <button class="btn btn--choice">Higher</button>
-            <button class="btn btn--choice">Lower</button>
-        </div>
-
-        <div id="result"></div>
-
-        <div class="score-area">
-            <p class="score">Correct Guesses: <span id="correct">0</span></p>
-            <p class="score">Incorrect Guesses: <span id="incorrect">0</span></p>
-        </div>
-
-    </div>
+    </main>
 
     <!-- Link JavaScript -->
     <script src="assets/js/script.js"></script>
