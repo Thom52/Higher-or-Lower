@@ -3,6 +3,13 @@
 body {
     min-height: 100vh;
     background-color: #22577A;
-    font-family: "oxygen", sans-serif;
+    font-family: 'oxygen', sans-serif;
     text-align: center;
+}
+
+/* ---------- Heading */
+
+.heading {
+    font-family: 'dosis', sans-serif;
+    font-size: 5rem;
 }
