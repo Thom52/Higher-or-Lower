@@ -1,0 +1,8 @@
+/* ---------- General Styles */
+
+body {
+    min-height: 100vh;
+    background-color: #22577A;
+    font-family: "oxygen", sans-serif;
+    text-align: center;
+}
