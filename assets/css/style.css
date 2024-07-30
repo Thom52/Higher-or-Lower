@@ -18,6 +18,7 @@ body {
 .heading {
     font-family: 'dosis', sans-serif;
     font-size: 3rem;
+    width: 200px;
 }
 
 /* ---------- Game Area */
