@@ -115,3 +115,16 @@ main {
         margin: 1rem;
     }
 }
+
+/* ---------- Media Query: Laptops and larger (1024px and up) */
+
+@media screen and (min-width: 1024px) {
+
+    /* ---------- Game Area */
+
+    .game-area {
+        max-width: 600px;
+        max-height: 600px;
+    }
+}
+
