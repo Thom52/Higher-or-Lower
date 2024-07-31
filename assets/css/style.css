@@ -60,3 +60,24 @@ main {
     height: 75px;
     margin: 1rem;
 }
+
+.btn {
+    background-color: #22577A;
+    color: #F8F7F2;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #FB3240;
+}
+
+.btn--roll {
+    margin-bottom: 1.5rem;
+}
+
+.btn--choice {
+    margin: 0 1rem 1rem 1rem;
+    padding: 0 10px;
+}
