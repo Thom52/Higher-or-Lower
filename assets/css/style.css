@@ -13,14 +13,6 @@ body {
     border: 3px solid #000000;
 }
 
-.rules-box > p {
-    padding: 10px;
-}
-
-.score-area > p {
-    padding: 5px;
-}
-
 /* ---------- Heading */
 
 .title {
@@ -70,6 +62,16 @@ main {
     margin: 1rem;
 }
 
+.rules-box > p {
+    padding: 10px;
+}
+
+.score-area > p {
+    padding: 5px;
+}
+
+/* ---------- Buttons */
+
 .btn {
     background-color: #22577A;
     color: #F8F7F2;
@@ -89,4 +91,27 @@ main {
 .btn--choice {
     margin: 0 1rem 1rem 1rem;
     padding: 0 10px;
+}
+
+/* ---------- Media Queries */
+
+/* ---------- Media Query: Tablets and larger (768px and up) */
+
+@media screen and (min-width: 768px) {
+
+    /* ---------- Game Area */
+
+    .rules-box {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .score-area {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .score {
+        margin: 1rem;
+    }
 }
