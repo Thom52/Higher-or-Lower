@@ -39,12 +39,20 @@ main {
     justify-content: center;
 }
 
-.game-area {
-    
+.game-area { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 75%;
     height: 75%;
     background-color: #F8F7F2;
     border: 3px solid #000000;
+}
+
+.rules-box {
+    width: 75%;
+    height: 75%;
 }
 
 #dice {
