@@ -12,7 +12,7 @@ function rollDice() {
 }
 
 function displayDice() {
-    let dice = document.querySelector(".img1").setAttribute("src", "d" + num + ".png");
+    
 }
 
 function selectedHigher() {
