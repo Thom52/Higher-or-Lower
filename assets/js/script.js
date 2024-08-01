@@ -1,14 +1,18 @@
 // Wait for DOM to finish loading before running code
 
 document.addEventListener("DOMContentLoaded", function() {
-    rollDice();
     const rollDiceButton = document.querySelector(".btn--roll");
     rollDiceButton.addEventListener("click", rollDice);
+    document.getElementById("result") + dice;
 })
 
 function rollDice() {
-    let number = 5;
-    console.log(number);
+    let num = Math.floor(Math.random() * 6) + 1;
+    console.log(num);
+}
+
+function displayDice() {
+    let dice = document.querySelector(".img1").setAttribute("src", "d" + num + ".png");
 }
 
 function selectedHigher() {
