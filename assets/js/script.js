@@ -7,12 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function rollDice() {
-    let num = Math.floor(Math.random() * 6) + 1;
-    console.log(num);
-}
-
-function displayDice() {
     
+    let num = Math.floor(Math.random() * 6) + 1;
+
+    document.querySelector("#dice").setAttribute("src", "assets/" + "images/" +
+        "d" + num + ".png");
 }
 
 function selectedHigher() {
