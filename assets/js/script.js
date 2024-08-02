@@ -1,17 +1,24 @@
 // Keeps value of last dice roll
 let currentRoll = 0;
+let newResult;
+
+let messageDiv = document.getElementById("message");
 
 // Wait for DOM to finish loading before running code
 // Get button elements and add event listeners to them
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     rollDice();
 
     higherButton = document.querySelector(".higher");
-    higherButton.addEventListener("click", selectedHigher);
+    higherButton.addEventListener("click", function () {
+        selectedUserChoice("higher");
+    });
 
     lowerButton = document.querySelector(".lower");
-    lowerButton.addEventListener("click", selectedLower);
+    lowerButton.addEventListener("click", function () {
+        selectedUserChoice("lower");
+    });
 
 })
 
@@ -25,7 +32,7 @@ function rollDice() {
     let num1 = Math.floor(Math.random() * 6) + 1;
 
     document.querySelector("#dice").setAttribute("src", "assets/" + "images/" +
-    "d" + num1 + ".png");
+        "d" + num1 + ".png");
 
     currentRoll = num1;
 }
@@ -40,52 +47,36 @@ function newDiceResult() {
     let newResult = num1;
 
     document.querySelector("#dice").setAttribute("src", "assets/" + "images/" +
-    "d" + num1 + ".png");
+        "d" + num1 + ".png");
 
     return newResult;
 }
 
 /**
- * Checks the current roll against the new result
- * looks to see if the new value is higher then the previous
- * if so, tells the user if they guessed correctly or not
+ * 
  */
-function selectedHigher() {
+function selectedUserChoice(higherChoice) {
 
-    let newResult = newDiceResult();
+    newResult = newDiceResult();
+
+    let message = "Bad luck, you guessed wrong!"
+
     if (newResult === currentRoll) {
-        alert("You hit the 1/6 chance of rolling the same number! Roll again!");
-    } else if (newResult > currentRoll) {
-        alert("You guessed right, congratulations!");
+        message = "You hit the 1/6 chance of rolling the same number! Roll again!";
+    } else if ((newResult > currentRoll && higherChoice == "higher") || (newResult < currentRoll && higherChoice == "lower")) {
+        message = "You guessed right, congratulations!";
         incrementCorrect();
     } else {
-        alert("Bad luck, you guessed wrong!")
         incrementIncorrect();
     }
 
-    currentRoll = newResult;
-
-}
-
-/**
- * Checks the current roll against the new result
- * looks to see if the new value is lower then the previous
- * if so, tells the user if they guessed correctly or not
- */
-function selectedLower() {
-
-    let newResult = newDiceResult();
-    if (newResult === currentRoll) {
-        alert("You hit the 1/6 chance of rolling the same number! Roll again!");
-    } else if (newResult < currentRoll) {
-        alert("You guessed right, congratulations!");
-        incrementCorrect();
-    } else {
-        alert("Bad luck, you guessed wrong!")
-        incrementIncorrect();
-    }
+    messageDiv.innerHTML = message;
 
     currentRoll = newResult;
+
+    setTimeout(function () {
+        messageDiv.innerHTML = "";
+    }, 2000);
 
 }
 
@@ -108,4 +99,3 @@ function incrementIncorrect() {
     document.getElementById("incorrect").innerText = ++oldScore;
 
 }
-
