@@ -1,5 +1,5 @@
 // Keeps value of last dice roll
-let previousRoll = 0;
+let currentRoll = 0;
 
 // Wait for DOM to finish loading before running code
 // Get button elements and add event listeners to them
@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     rollDice();
 
     higherButton = document.querySelector(".higher");
-    higherButton.addEventListener("click", selectedHigher); {
-    }
+    higherButton.addEventListener("click", selectedHigher);
 
     lowerButton = document.querySelector(".lower");
     lowerButton.addEventListener("click", selectedLower);
@@ -23,13 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 function rollDice() {
 
-    const num1 = Math.floor(Math.random() * 6) + 1;
-    console.log(num1);
+    let num1 = Math.floor(Math.random() * 6) + 1;
 
     document.querySelector("#dice").setAttribute("src", "assets/" + "images/" +
     "d" + num1 + ".png");
 
-    previousRoll = num1;
+    currentRoll = num1;
 }
 
 /**
@@ -37,13 +35,12 @@ function rollDice() {
  */
 function newDiceResult() {
 
-    const num1 = Math.floor(Math.random() * 6) + 1;
+    let num1 = Math.floor(Math.random() * 6) + 1;
     console.log(num1);
-    
+    let newResult = num1;
+
     document.querySelector("#dice").setAttribute("src", "assets/" + "images/" +
     "d" + num1 + ".png");
-
-    const newResult = num1;
 
     return newResult;
 }
@@ -55,13 +52,18 @@ function newDiceResult() {
  */
 function selectedHigher() {
 
-    const newResult = newDiceResult();
-
-    if (newResult > previousRoll) {
-        alert("Congratulations!");
+    let newResult = newDiceResult();
+    if (newResult === currentRoll) {
+        alert("You hit the 1/6 chance of rolling the same number! Roll again!");
+    } else if (newResult > currentRoll) {
+        alert("You guessed right, congratulations!");
+        incrementCorrect();
     } else {
-        alert("Better luck next time!");
+        alert("Bad luck, you guessed wrong!")
+        incrementIncorrect();
     }
+
+    currentRoll = newResult;
 
 }
 
@@ -72,21 +74,38 @@ function selectedHigher() {
  */
 function selectedLower() {
 
-    const newResult = newDiceResult();
-
-    if (newResult < previousRoll) {
-        alert("Congratulations!");
+    let newResult = newDiceResult();
+    if (newResult === currentRoll) {
+        alert("You hit the 1/6 chance of rolling the same number! Roll again!");
+    } else if (newResult < currentRoll) {
+        alert("You guessed right, congratulations!");
+        incrementCorrect();
     } else {
-        alert("Better luck next time!");
-    }   
+        alert("Bad luck, you guessed wrong!")
+        incrementIncorrect();
+    }
+
+    currentRoll = newResult;
 
 }
 
+/**
+ * increments correct guesses scoreboard by 1
+ */
 function incrementCorrect() {
 
+    let oldScore = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++oldScore;
+
 }
 
+/**
+ * increments incorrect guesses scoreboard by 1
+ */
 function incrementIncorrect() {
+
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 
 }
 
