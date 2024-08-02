@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     higherButton = document.querySelector(".higher");
     higherButton.addEventListener("click", selectedHigher);
+
+    lowerButton = document.querySelector(".lower");
+    lowerButton.addEventListener("click", selectedLower);
     
 })
 
@@ -46,6 +49,14 @@ function selectedHigher() {
 }
 
 function selectedLower() {
+
+    const newResult = newDiceResult();
+
+    if (newResult <= currentRoll) {
+        alert("Congratulations!");
+    } else {
+        alert("Better luck next time!");
+    }
 
 }
 
