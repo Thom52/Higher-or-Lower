@@ -1,13 +1,12 @@
 
-<p align="center"><img src="/assets/images/responsive.png" alt="drawing" width="800"/></p>
+<p align="center"><img src="assets/documentation/main-img.webp" alt="drawing" width="800"/></p>
 
 
 # Introduction
 # Higher or Lower
 ### Introduction - A game to test your luck, if you dare? Is the next roll of the dice higher or lower? Only you know that, so take the plunge and put your luck on the line...
 
-### Project Purpose - This project is designed to be an engaing and interactive experience putting the users luck up against the device they are playing it on, be it mobile or computer screen. 
-
+### Project Purpose - This project is designed to be an engaging and interactive experience, putting the user's luck up against the device they are playing it on, be it mobile or computer screen. 
 
 
 
@@ -27,9 +26,9 @@
 
 **Dice Image**
 
-  - This feature uses JavaScript to update the dice area div with an image of a dice that correlates to the number randomly created by the rollDice() functtion.
+ - This feature uses JavaScript to update the dice area DIV with an image of a die that correlates to the number randomly created by the rollDice() function.
 
-  - It rolls automatically upon site load and has a animation that creates the look of a dice rolling.
+  - It rolls automatically upon site load and has an animation that creates the look of a die rolling.
 
   - More engaging and better visually than just a number appearing. 
   
@@ -44,7 +43,7 @@
 
 **Higher or Lower function**
 
-  - The main area of user interaction on the page. User either selects the higher or lower button depending on the current number on the dice.
+  - The main area of user interaction on the page. The user either selects the higher or lower button, depending on the current number on the die.
 
   - The game then rolls another dice and will inform you if you were correct or incorrect.
 
@@ -56,13 +55,13 @@
 
 <hr> 
 
-**Score Feature**
+**Scoreboard Feature**
 
   - A dynamically changing score counter that either increases correct or incorrect guesses depending on if the user was correct or incorrect.
 
   - A fun bit of engagement for the user to try and keep their correct score higher than their incorrect score.
 
-  <details><summary>Score Screenshot</summary>
+  <details><summary>Scoreboard Screenshot</summary>
 
   <p align="center"><img src="assets/documentation/scores.webp" alt="drawing" width="600"/></p>
 
@@ -73,7 +72,7 @@
 
 **Message Feature**
 
-  - This feature displays a message on the screen in the game area giving the user a congratulations or a better luck next time message depending on if their guess was correct or incorrect.
+  - This feature displays a message on the screen in the game area, giving the user a congratulation or a better luck next time message, depending on if their guess was correct or incorrect.
 
   - Also has a message that flashes if the new number rolled was the same as the previous. This doesn't count as a right or wrong and instead asks the user to roll again.
 
@@ -122,26 +121,21 @@ This report presents the results of Lighthouse testing conducted to assess the p
 Lighthouse tests were executed using the Brave's browser's DevTools.
 
 **Test Metrics**
-- Performance Score: 81
-- Accessibility Score: 93
-- Best Practices Score: 92
-- SEO Score: 92
+- Performance Score: 100
+- Accessibility Score: 100
+- Best Practices Score: 100
+- SEO Score: 91
 
 **Detailed Results**
-- **Performance**: The website's performance score is 81, indicating good overall performance. However, there is room for improvement to further optimize loading times.
-- **Accessibility**: The website excels in accessibility, with a score of 93, indicating strong adherence to accessibility standards. Minimal accessibility issues were detected.
-- **Best Practices**: The website follows best practices with a score of 92. There are minor areas for improvement, particularly in script loading.
-- **SEO**: SEO performance is strong, with a score of 92. The website has well-optimized meta tags and structured data markup.
+- **Performance**: The website's performance score is 100, indicating good overall performance.
+- **Accessibility**: The website excels in accessibility, with a score of 100, indicating strong adherence to accessibility standards.
+- **Best Practices**: The website follows best practices with a score of 100.
+- **SEO**: SEO performance is strong, with a score of 91. The website has well-optimized meta tags and structured data markup.
 
-**Areas for Improvement**
-- Performance can be enhanced by optimizing resource loading and reducing unnecessary requests.
-- Continue monitoring accessibility to maintain a high standard and address any emerging issues.
-- Best practices can be further improved by optimizing script loading and code splitting.
-- Maintain and regularly update meta tags and structured data markup to ensure strong SEO performance.
 
 **Visuals**
 
-<p align="center"><img src="https://res.cloudinary.com/dugnokxox/image/upload/v1692960667/Screenshot_2023-08-25_at_11.50.29_cfmkxt.png" alt="drawing" width="800"/></p>
+<p align="center"><img src="assets/documentation/lighthouse.webp" alt="drawing" width="800"/></p>
 
 <hr>
 
@@ -149,8 +143,10 @@ Lighthouse tests were executed using the Brave's browser's DevTools.
 
 **Supported Browsers and Devices**
 Our web application is officially tested and supported on the following browsers and devices:
+- Brave (latest version)
 - Google Chrome (latest version)
 - Mozilla Firefox (latest version)
+- Safari (latest version)
 
 **Responsiveness Testing**
 We conduct manual responsiveness testing on Chrome and Firefox to ensure a seamless user experience.
@@ -159,15 +155,14 @@ We conduct manual responsiveness testing on Chrome and Firefox to ensure a seaml
 
 | Device/Screen Size  | Chrome Performance | Firefox Performance |
 |----------------------|--------------------|---------------------|
-| Desktop (1920x1080) | Describe performance and issues on Chrome | Describe performance and issues on Firefox |
-| Laptop (1366x768)   | Describe performance and issues on Chrome | Describe performance and issues on Firefox |
-| Tablet (iPad)       | Describe performance and issues on Chrome | Describe performance and issues on Firefox |
-| Mobile (iPhone X)   | Describe performance and issues on Chrome | Describe performance and issues on Firefox |
+| Desktop (1920x1080) | Perfect performance, no issues noticed on Chrome | Perfect performance, no issues noticed on Firefox |
+| Laptop (1366x768)   | Perfect performance, no issues noticed on Chrome | Perfect performance, no issues noticed on Firefox |
+| Tablet (iPad)       | Perfect performance, no issues noticed on Chrome | Perfect performance, no issues noticed on Firefox |
+| Mobile (iPhone X)   | Perfect performance, no issues noticed on Chrome | Perfect performance, no issues noticed on Firefox |
 
-**Known Issues**
-- [List any known responsiveness issues or limitations]
 
 **Recommendations**
+
 If you encounter any responsiveness issues, we recommend:
 - Updating your browser to the latest version.
 - Trying an alternative device or screen size for optimal viewing.
@@ -177,26 +172,27 @@ If you encounter any responsiveness issues, we recommend:
 #### Screen Sizes testing
 
 **Introduction**
-This section provides an overview of how our web application [Website Name] performs across different screen sizes.
+- This section provides an overview of how our web application [Website Name] performs across different screen sizes.
 
 **Supported Screen Sizes**
-Our web application is designed to be responsive and adapt to various screen sizes. Below are the screen sizes we have tested:
+- Our web application is designed to be responsive and adapt to various screen sizes. Below are the screen sizes we have tested:
 
 | Screen Size     | Description             |
 |-----------------|-------------------------|
-| Desktop         | 1920x1080 pixels        |
-| Laptop          | 1366x768 pixels         |
+| Laptop (L)        | 1440x1080 pixels        |
+| Laptop          | 1024x768 pixels         |
 | Tablet (iPad)   | 768x1024 pixels (portrait) and 1024x768 pixels (landscape) |
-| Mobile (iPhone) | 375x812 pixels (iPhone X, portrait) and 812x375 pixels (iPhone X, landscape) |
+| Mobile (iPhone) | 320x812 pixels (portrait) and 819x375 pixels (landscape) |
+
 
 **Testing Results**
 
 | Screen Size     | Test Results           |
 |-----------------|------------------------|
-| Desktop         | Describe performance and issues on different browsers |
-| Laptop          | Describe performance and issues on different browsers |
-| Tablet (iPad)   | Describe performance and issues on different browsers |
-| Mobile (iPhone) | Describe performance and issues on different browsers |
+| Desktop         | Perfect performance and no loading issues acorss Google chrome, Brave, Firefox and Safari. |
+| Laptop          | Perfect performance and no loading issues acorss Google chrome, Brave, Firefox and Safari. |
+| Tablet (iPad)   | Perfect performance and no loading issues acorss Google chrome, Brave, Firefox and Safari. |
+| Mobile (iPhone) | Perfect performance and no loading issues acorss Google chrome, Brave, Firefox and Safari. |
 
 <hr> 
 
@@ -204,46 +200,26 @@ Our web application is designed to be responsive and adapt to various screen siz
 
 
 **Introduction**
+
 This section provides a summary of bugs that have been identified, reported, and subsequently resolved in [Website Name].
 
 **Bug Tracking**
+
 Below is a summary of resolved bugs:
 
 | Bug ID | Bug Description | Status |
 |--------|-----------------|--------|
-| #001   | Describe the bug and its impact on the user experience. | Resolved |
-| #002   | Describe the bug and its impact on the user experience. | Resolved |
-| #003   | Describe the bug and its impact on the user experience. | Resolved |
-| #004   | Describe the bug and its impact on the user experience. | Resolved |
-| #005   | Describe the bug and its impact on the user experience. | Resolved |
+| #001   | When trying to create the higher and lower function, the new number that was generated from these functions weren't being stored in the global variable created to store the current number. So once the page loaded and generated the first number, every higher or lower choice after was being compared to that original value, not the new one being created. | Resolved |
 
 **Bug Details**
+
 Here are the details of the resolved bugs:
 
 **Bug #001**
-- **Description**: Describe the bug and the steps to reproduce it.
-- **Resolution**: Explain how the bug was resolved, including any code changes or fixes.
-- **Impact**: Discuss the impact of this bug on users and the importance of the fix.
+- **Resolution**: Noticed that in my selectedUserChoice function, I had misspelled the variable name currentRoll, which is the global variable where the current roll (number) is stored. 
+- This function rolls a new dice and then changes the value of currentRoll with newResult. However, due to the misspelling, the value of currentRoll wasn't being changed.
+- **Impact**: As the main game loop is to guess if the current number is higher or lower, this bug completely destroyed that loop by not updating the number, which caused the game to not work.
 
-**Bug #002**
-- **Description**: Describe the bug and the steps to reproduce it.
-- **Resolution**: Explain how the bug was resolved, including any code changes or fixes.
-- **Impact**: Discuss the impact of this bug on users and the importance of the fix.
-
-**Bug #003**
-- **Description**: Describe the bug and the steps to reproduce it.
-- **Resolution**: Explain how the bug was resolved, including any code changes or fixes.
-- **Impact**: Discuss the impact of this bug on users and the importance of the fix.
-
-**Bug #004**
-- **Description**: Describe the bug and the steps to reproduce it.
-- **Resolution**: Explain how the bug was resolved, including any code changes or fixes.
-- **Impact**: Discuss the impact of this bug on users and the importance of the fix.
-
-**Bug #005**
-- **Description**: Describe the bug and the steps to reproduce it.
-- **Resolution**: Explain how the bug was resolved, including any code changes or fixes.
-- **Impact**: Discuss the impact of this bug on users and the importance of the fix.
 
 <hr>
 
@@ -251,18 +227,17 @@ Here are the details of the resolved bugs:
 
 | Bug ID | Bug Description | Status |
 |--------|-----------------|--------|
-| #001   | Describe the bug and its impact on the user experience. | Unesolved |
-| #002   | Describe the bug and its impact on the user experience. | Unesolved |
-| #003   | Describe the bug and its impact on the user experience. | Unesolved |
-| #004   | Describe the bug and its impact on the user experience. | Unesolved |
-| #005   | Describe the bug and its impact on the user experience. | Unesolved |
+| #001   | I have created a function that displays a message detailing to the user whether their guess was correct or incorrect. This was enhanced by using a setTimeout method that will display the message for 2 seconds before disappearing. However, if you click higher or lower whilst this message is still displayed, it bugs out and the next message that appears will only last a split second. The next time you click higher or lower, though, the setTimeout method works as intended. Whilst not a game breaking bug, it is a visual bug that stops the user from seeing the message if they rapidly push higher or lower. | Unresolved |
+
 <hr>
 
 #### Validator Testing 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+- JavaScript
+  - No errors or warnings were found passing through [JSHint](https://jshint.com/)
 
 
 
@@ -275,28 +250,18 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Main Branch
   - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://thom52.github.io/Higher-or-Lower/
 
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. 
-It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 #### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- The development of this project was aided by the following YouTube tutorials:
+- The fonts for the heading and p elements were taken from [Google Fonts](https://fonts.google.com/)
 
-| Tutorial Title      | Creator/Channel Name | Description                                          |
-|---------------------|-----------------------|------------------------------------------------------|
-| [Tutorial Title 1](link-to-tutorial) | [Creator/Channel Name 1] | How this tutorial helped you.             |
-| [Tutorial Title 2](link-to-tutorial) | [Creator/Channel Name 2] | How this tutorial contributed to your project. |
+- The favicon was taken from [Flat Icon](https://www.flaticon.com/)
 
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The dice face icons were taken from [Game Icons](https://game-icons.net/) a great project built to provide users with an ever growing library of game icons to use in your projects.
 
-#### Media
+- The scoreboard feature was inspired by the Love Math project created by [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+3/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/)
 
-The following images used in this project are sourced from Unsplash and are used under their respective licenses:
