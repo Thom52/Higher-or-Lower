@@ -79,7 +79,7 @@ function selectedUserChoice(higherChoice) {
 
     setTimeout(function () {
         messageDiv.innerHTML = "";
-    }, 1500);
+    }, 2000);
 
 }
 
