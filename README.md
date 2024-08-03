@@ -149,6 +149,7 @@ Our web application is officially tested and supported on the following browsers
 - Safari (latest version)
 
 **Responsiveness Testing**
+
 We conduct manual responsiveness testing on Chrome and Firefox to ensure a seamless user experience.
 
 **Test Results**
