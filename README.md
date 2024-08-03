@@ -173,7 +173,7 @@ If you encounter any responsiveness issues, we recommend:
 #### Screen Sizes testing
 
 **Introduction**
-- This section provides an overview of how our web application [Website Name] performs across different screen sizes.
+- This section provides an overview of how our web application Higher or Lower performs across different screen sizes.
 
 **Supported Screen Sizes**
 - Our web application is designed to be responsive and adapt to various screen sizes. Below are the screen sizes we have tested:
@@ -202,7 +202,7 @@ If you encounter any responsiveness issues, we recommend:
 
 **Introduction**
 
-This section provides a summary of bugs that have been identified, reported, and subsequently resolved in [Website Name].
+This section provides a summary of bugs that have been identified, reported, and subsequently resolved in Higher or Lower.
 
 **Bug Tracking**
 
