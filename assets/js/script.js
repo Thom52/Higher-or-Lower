@@ -53,7 +53,10 @@ function newDiceResult() {
 }
 
 /**
- * 
+ * Main game loop. 
+ * User chooses higher or lower and the function
+ * reacts depending on if the guess was correct
+ * or incorrect
  */
 function selectedUserChoice(higherChoice) {
 
@@ -76,7 +79,7 @@ function selectedUserChoice(higherChoice) {
 
     setTimeout(function () {
         messageDiv.innerHTML = "";
-    }, 2000);
+    }, 1500);
 
 }
 

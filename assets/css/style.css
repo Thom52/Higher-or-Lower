@@ -13,11 +13,6 @@ body {
     border: 3px solid #000000;
 }
 
-#message {
-    height: 25px;
-    color: #FB3240;
-}
-
 /* ---------- Heading */
 
 .title {
@@ -61,6 +56,15 @@ main {
     height: 75%;
 }
 
+.img1 {
+    max-width: 50px; 
+}
+
+#message {
+    height: 25px;
+    color: #FB3240;
+}
+
 #dice {
     width: 75px;
     height: 75px;
@@ -73,11 +77,6 @@ main {
 
 .score-area > p {
     padding: 5px;
-}
-
-.img1 {
-    max-width: 50px;
-    
 }
 
 /* ---------- Buttons */
