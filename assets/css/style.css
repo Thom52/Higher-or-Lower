@@ -8,6 +8,10 @@ body {
     color: #F8F7F2;
 }
 
+p {
+    font-weight: 600;
+}
+
 .red {
     background-color: #FB3240;
     border: 3px solid #000000;

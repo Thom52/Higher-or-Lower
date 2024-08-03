@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     rollDice();
 
-    higherButton = document.querySelector(".higher");
+    let higherButton = document.querySelector(".higher");
     higherButton.addEventListener("click", function () {
         selectedUserChoice("higher");
     });
 
-    lowerButton = document.querySelector(".lower");
+    let lowerButton = document.querySelector(".lower");
     lowerButton.addEventListener("click", function () {
         selectedUserChoice("lower");
     });
 
-})
+});
 
 /**
  * Begins main game loop. 
@@ -62,7 +62,7 @@ function selectedUserChoice(higherChoice) {
 
     newResult = newDiceResult();
 
-    let message = "Bad luck, you guessed wrong!"
+    let message = "Bad luck, you guessed wrong!";
 
     if (newResult === currentRoll) {
         message = "You hit the 1/6 chance of rolling the same number! Roll again!";

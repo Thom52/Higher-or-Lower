@@ -3,103 +3,101 @@
 
 
 # Introduction
-# Project Name
-### Project Description - Provide a brief, one- or two-sentence description of what your project does. This should be a high-level summary that quickly conveys the project's purpose.
-### Project Purpose - Explain why your project exists and what problem it aims to solve. This helps users understand the context and motivation behind your project. 
-### How it benefits the Users, Users Demographic - Whom does the site target and how will it benefit them
+# Higher or Lower
+### Introduction - A game to test your luck, if you dare? Is the next roll of the dice higher or lower? Only you know that, so take the plunge and put your luck on the line...
+
+### Project Purpose - This project is designed to be an engaing and interactive experience putting the users luck up against the device they are playing it on, be it mobile or computer screen. 
 
 
 
 
 # Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. 
-You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+**Rules Box**
 
-<hr> 
+  - This feature quickly explains how the game works, quickly giving the users all the information required to interact with the page.
 
-**Navbar**
+  <details><summary>Rules Box Screenshot</summary>
 
-  - Featured on all three pages, the fully responsive navigation bar includes links to the logo, home page, gallery, and sign-up page. It is identical on each page to facilitate easy navigation.
-  - This section allows users to navigate seamlessly between pages on all devices without needing to use the 'back' button.
-
-  <details><summary>Navbar Screenshot</summary>
-
-  <p align="center"><img src="https://placehold.co/600x400" alt="drawing" width="600"/></p>
+  <p align="center"><img src="assets/documentation/rules.webp" alt="Rules box" width=""/></p>
 
   </details>
 
 <hr> 
 
-**Services**
+**Dice Image**
 
-  - Services section highlights available to the client services in a form of cards, each with a Call To Action button leading to the Contact form 
+  - This feature uses JavaScript to update the dice area div with an image of a dice that correlates to the number randomly created by the rollDice() functtion.
 
-  <details><summary>Services Screenshot</summary>
+  - It rolls automatically upon site load and has a animation that creates the look of a dice rolling.
 
-  <p align="center"><img src="https://placehold.co/600x400" alt="drawing" width="600"/></p>
+  - More engaging and better visually than just a number appearing. 
+  
 
-  </details>
+  <details><summary>Dice Screenshot</summary>
 
-<hr> 
-
-**The Gallery**
-
-  - Gallery showcases various artwork by the Photographer, or images of past events
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
-
-  <details><summary>Gallery Screenshot</summary>
-
-  <p align="center"><img src="https://placehold.co/600x400" alt="drawing" width="600"/></p>
+  <p align="center"><img src="assets/documentation/dice-feature.webp" alt="dice face" width="200" /></p>
 
   </details>
 
 <hr> 
 
-**Contact Form**
+**Higher or Lower function**
 
-  - An interactive contact form to enable users to get in touch with the company
-  - Includes fields for name, email and a message
+  - The main area of user interaction on the page. User either selects the higher or lower button depending on the current number on the dice.
 
-  <details><summary>Contact Form Screenshot</summary>
+  - The game then rolls another dice and will inform you if you were correct or incorrect.
 
-  <p align="center"><img src="https://placehold.co/600x400" alt="drawing" width="600"/></p>
+  <details><summary>Higher or Lower Screenshot</summary>
 
-  </details>
-
-<hr> 
-
-**The Footer**
-
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
-
-  <details><summary>Footer Screenshot</summary>
-
-   <p align="center"><img src="https://placehold.co/600x400" alt="drawing" width="600"/></p>
+  <p align="center"><img src="assets/documentation/higher-lower.webp" alt="drawing" width="600"/></p>
 
   </details>
 
 <hr> 
 
+**Score Feature**
 
+  - A dynamically changing score counter that either increases correct or incorrect guesses depending on if the user was correct or incorrect.
+
+  - A fun bit of engagement for the user to try and keep their correct score higher than their incorrect score.
+
+  <details><summary>Score Screenshot</summary>
+
+  <p align="center"><img src="assets/documentation/scores.webp" alt="drawing" width="600"/></p>
+
+  </details>
+
+
+<hr> 
+
+**Message Feature**
+
+  - This feature displays a message on the screen in the game area giving the user a congratulations or a better luck next time message depending on if their guess was correct or incorrect.
+
+  - Also has a message that flashes if the new number rolled was the same as the previous. This doesn't count as a right or wrong and instead asks the user to roll again.
+
+  <details><summary>Message Screenshot</summary>
+
+  <p align="center"><img src="assets/documentation/message.webp" alt="Rules box" width=""/></p>
+
+  </details>
+
+<hr> 
 
 
 ## Future Features
-While the current version of the project is fully functional, we have some exciting features planned for future updates. Here are a few ideas that we didn't have time to implement in this release:
+While the current version of the project is fully functional, I have some features planned for future updates that I would like to implement:
 
-1. **Client Galleries**:
-   - Allow photographers to create private galleries for clients to view and download their photos securely.
-2. **Online Booking and Scheduling**:
-   - Implement a booking system that allows clients to schedule sessions with photographers, choose dates, and make payments online.
-3. **Photo Editing Tools**:
-   - Integrate basic photo editing tools like cropping, rotating, and applying filters directly on the website to enhance user-generated photos.
-4. **Print Ordering**:
-   - Enable clients to order prints, canvases, or other products featuring their favorite photos directly from the website.
-5. **Portfolio Builder**:
-   - Provide photographers with tools to easily create and customize their online portfolios, including options for different styles and layouts.
-6. **Blog or News Section**:
-   - Add a blog or news section to share photography tips, behind-the-scenes stories, and updates about your services.
+1. **Difficulty Choice**:
+   - Adding a d10 (ten sided dice) and a d20 (twenty sided dice) to the page that the user can select. Each dice representing a difficulty spike. d6 = easy, d10 = medium, d20 = hard.
+2. **Rolling Animations**:
+   - Add the rolling animation to every dice roll, not just the first one of the page load.
+3. **Sound effects**:
+   - Add dice rolling sound effects when the dice roll onto the screen. Further increasing the fun and engagement of the game.
+4. **Optional game mode**:
+   - Add an optional game mode where you click a button to activate it, but if you get a guess wrong, the game resets. A game mode designed to see how long you can go for.
+
 
 <hr>
 
@@ -109,23 +107,19 @@ While the current version of the project is fully functional, we have some excit
 
 |  Feature |  Action | Effect |
 |---|---|---|
-|Logo|Click|Brings back to Home page|
-|Navbar Links|Click on Gallery|Opens Gallery|
-||Click on About|Opens About page|
-||Click on Contact|Opens Contact page|
-|Contact Page|Fill out the form and submit|A form dump is rendered|
-||Attempt to submit empty|Error pops up in field that's left empty|
-|Social Media Links|Test Instagram link|Instagram profile opens in a separate tab|
+|Higher Button|Click|Rolls dice and checks to see if the new number is higher than the previous. If so, increments correct score.|
+|Lower Button|Click|Rolls dice and checks to see if the new number is lower than the previous. If so, increments incorrect score.|
+
 
 <hr>
 
 #### Lighthouse
 
 **Introduction**
-This report presents the results of Lighthouse testing conducted to assess the performance, accessibility, best practices, SEO, and PWA compliance of [Website Name].
+This report presents the results of Lighthouse testing conducted to assess the performance, accessibility, best practices, SEO, and PWA compliance of Higher or Lower.
 
 **Test Execution**
-Lighthouse tests were executed using the Google Chrome browser's DevTools.
+Lighthouse tests were executed using the Brave's browser's DevTools.
 
 **Test Metrics**
 - Performance Score: 81
