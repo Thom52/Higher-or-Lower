@@ -258,6 +258,8 @@ The live link can be found here - https://thom52.github.io/Higher-or-Lower/
 
 #### Content 
 
+- The animation for the dice roll was taken from the [Animate.css](https://animate.style/) library.
+
 - The fonts for the heading and p elements were taken from [Google Fonts](https://fonts.google.com/)
 
 - The favicon was taken from [Flat Icon](https://www.flaticon.com/)
